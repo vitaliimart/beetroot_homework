@@ -6,10 +6,10 @@
 }
 body {
   font-family: 'Roboto', sans-serif;
-  max-width: 960px;
+  max-width: 1280px;
   min-width: 480px;
 }
 img {
-  height: 200px;
-  width: 400px;
+  height: auto;
+  width: 800px;
 }

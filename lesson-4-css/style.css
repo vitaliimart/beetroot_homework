@@ -14,7 +14,6 @@ body {
   max-width: fit-content;
 }
 .text {
-  /* padding-left: 5%; */
   font-size: 16px;
 }
 .text h1,
@@ -29,10 +28,6 @@ span {
 }
 .text a:hover {
   color: green;
-}
-
-.text-block {
-  /* margin-top: 20px; */
 }
 
 .text-photo img {

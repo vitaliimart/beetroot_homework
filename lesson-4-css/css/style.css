@@ -34,10 +34,9 @@ body {
   font-size: var(--f-h2);
 }
 
-.text-photo img {
+.text-photo {
   height: 200px;
   width: 200px;
-  border-radius: 50%;
 }
 .text-photo img {
   width: 100%;

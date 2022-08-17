@@ -33,11 +33,12 @@ body {
   color: var(--c-main);
   font-size: var(--f-h2);
 }
-.text-photo {
-  width: 200px;
-  height: 200px;
-}
 
+.text-photo img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
 .text-photo img {
   width: 100%;
   border-radius: 50%;

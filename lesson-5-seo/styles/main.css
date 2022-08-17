@@ -4,34 +4,14 @@
   margin: 0;
 }
 
-*::selection {
-  background-color: yellow;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 12px;
-}
-
 body {
-  background-color: var(--c-white);
-  color: var(--c-black);
+  font-family: 'Lato', sans-serif;
+  color: var(--c-main);
 }
 
-a {
-  color: var(--c-primary);
-}
+.wrapper {
+  width: 100%;
+  min-width: 360px;
+  max-width: 1100px;
 
-a:hover {
-  color: var(--c-succes);
-}
-.logo-wrapper {
-  margin: 20px;
-}
-.logo-text {
-  color: yellow;
 }

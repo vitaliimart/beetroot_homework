@@ -1,11 +1,10 @@
 :root {
-	/** Colors */
-  --c-black: #333;
-  --c-white: #e3e3e3;
-  --c-primary: chocolate;
+  /** Colors */
+  --c-main: #333;
+  --c-secondary: chocolate;
   --c-succes: green;
   --c-warning: red;
 
-	/* *Fonts*/
-	--f-base: 14px;
+  /* *Fonts*/
+  --f-base: 14px;
 }

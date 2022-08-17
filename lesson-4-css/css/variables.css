@@ -1,4 +1,10 @@
 :root {
+  /* Colors */
+  --c-main: #333;
+  --c-secondary: #dedddd;
+  --c-success: #008000;
+  --c-last: #373734;
+	
   /* Fonts*/
   --f-small: 14px;
   --f-base: 16px;

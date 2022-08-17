@@ -13,7 +13,7 @@ body {
 .wrapper {
   width: 100%;
   min-width: 360px;
-  max-width: 1980px;
+  max-width: 1100px;
   line-height: 1.2;
   padding-left: 5%;
 }
@@ -33,9 +33,13 @@ body {
   color: var(--c-main);
   font-size: var(--f-h2);
 }
+.text-photo {
+  width: 200px;
+  height: 200px;
+}
 
 .text-photo img {
-  height: 200px;
+  width: 100%;
   border-radius: 50%;
 }
 

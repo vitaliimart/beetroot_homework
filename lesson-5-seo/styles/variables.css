@@ -1,10 +1,17 @@
 :root {
   /** Colors */
-  --c-main: #333;
-  --c-secondary: chocolate;
-  --c-succes: green;
-  --c-warning: red;
+  --c-main: #000;
+  --c-secondary: #5a667b;
+  --c-third: #5b90f7;
+  --c-button: #fff;
 
-  /* *Fonts*/
-  --f-base: 14px;
+  /* *Font-family */
+  --ff-base: 'IBM Plex Sans', sans-serif;
+
+  /* *Font-size*/
+  --fs-h1: 40px;
+  --fs-h2: 28px;
+  --fs-h3: 16px;
+  --fs-base: 14px;
+  --fs-button: 12px;
 }

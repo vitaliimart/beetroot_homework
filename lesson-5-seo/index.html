@@ -1,27 +1,249 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./styles/normalise.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/main.css" />
-    <title>SEO-tag</title>
+    <title>main</title>
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
-        <h1>SEO</h1>
+        <div class="header-logo logo">
+          <img src="./assets/images/logo.png" alt="logo" />
+        </div>
+        <nav class="header-menu">
+          <ul class="menu">
+            <li class="menu-item">
+              <a class="menu-item__link" href="./pages/repairs.html">Ремонти</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-item__link" href="./pages/about.html"> Про нас</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-item__link" href="./pages/contacts.html">
+                Контакти</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="header-buttons">
+          <button class="header-button button" type="button">
+            <span class="button__text">Викликати кур'єра</span>
+          </button>
+          <button class="header-button button" type="button">
+            <span class="button__text">Заявка на ремонт</span>
+          </button>
+        </div>
       </header>
-      <main class="main"></main>
-      <footer class="footer"></footer>
+      <!-- <aside class="aside-articles">
+          <article class="aside-articles-mobile">
+            <h3 class="aside-articles__title"></h3>
+            <p class="aside-articles__text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              tempore laboriosam itaque provident unde repellat minima deserunt
+              ducimus magni animi, reiciendis, illo saepe aperiam aut tempora,
+              facere ab possimus cumque?
+            </p>
+          </article>
+
+          <article class="aside-articles-tablet">
+            <h3 class="aside-articles__title"></h3>
+            <p class="aside-articles__text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              tempore laboriosam itaque provident unde repellat minima deserunt
+              ducimus magni animi, reiciendis, illo saepe aperiam aut tempora,
+              facere ab possimus cumque?
+            </p>
+          </article>
+        </aside> -->
+      <main class="main">
+        <section class="main-firstscreen">
+          <div class="main-firstscreen-left">
+            <h1 class="main-firstscreen-left__maintitle">
+              Авторизований сервісний центр
+            </h1>
+            <p class="main-firstscreen-left__subtitle">
+              Швидкий, безпечний та надійний ремонт Apple пристроїв
+            </p>
+            <h2 class="main-firstscreen-left__title title">
+              Ми дбаємо про Вашу техніку!
+            </h2>
+            <p class="main-firstscreen-left__text">
+              Залиште заявку на ремонт через форму на сайті та отримаєте 5%
+              знижку
+            </p>
+            <button class="main-firstscreen-left-button button" type="button">
+              <span class="button__text">Заявка на ремонт</span>
+            </button>
+          </div>
+          <div class="main-firstscreen-write">
+            <ul class="main-firstscreen-menu">
+              <li class="main-firstscreen-menu-item">
+                <a class="main-firstscreen-menu-item__link" href="#"
+                  >Ремонт iPhone</a
+                >
+              </li>
+              <li class="main-firstscreen-menu-item">
+                <a class="main-firstscreen-menu-item__link" href="#"
+                  >Ремонт MacBook</a
+                >
+              </li>
+              <li class="main-firstscreen-menu-item">
+                <a class="main-firstscreen-menu-item__link" href="#"
+                  >Ремонт iPad</a
+                >
+              </li>
+              <li class="main-firstscreen-menu-item">
+                <a class="main-firstscreen-menu-item__link" href="#"
+                  >Ремонт Apple Watch</a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="main-secondscreen">
+          <article class="main-secondscreen-article">
+            <h2 class="main-secondscreen-article__title title">
+              iFix – сервісний центр Apple, в якому ви не переплачуєте за бренд
+            </h2>
+            <div class="main-secondscreen-article__text text">
+              <p>
+                iFix - це мережа професійних сервісів Apple, яка більше 6 років
+                на ринку яблучної техніки.
+              </p>
+              <p>
+                Ми ремонтуємо все, що коли-небудь виробляла компанія Apple та що
+                ще буде в майбутньому;)
+              </p>
+              <p>
+                Як з’явилася така ідея? Ще в 2008 році до засновника нашої
+                компанії потрапив вже раритетний iPhone 2g. Поступово попит на
+                модну яблучну техніку збільшувався, але залишалася одна
+                проблема: відсутність якісних ремонтних салонів.
+              </p>
+              <p>
+                З тих пір багато чого змінилося, але ідея залишилася - створити
+                чесний сервіс по ремонту техніки Apple з прозорими умовами
+                обслуговування. І нам це вдалося!
+              </p>
+              <p>
+                В основі нашої компанії лежать такі моральні цінності як:
+                чесність, порядність, відповідальність, компетентність,
+                лояльність та старанність. Завдяки цьому за 6 років існування ми
+                успішно виконали: 64 000 замовлень.
+              </p>
+              <p>
+                60% клієнтів після першого візиту стали нашими постійними
+                гостями та рекомендують нас своїм друзям та колегам.
+              </p>
+              <p>
+                Наш сервіс Apple у Львові може задовольнити навіть самого
+                вимогливого користувача. Ось вам кілька доводів.
+              </p>
+              <p>
+                Ремонт iPhone, iPad, iPod, MacBook та Apple Watch ми проводимо в
+                рекордно швидкий термін. Це ніяк не позначається на якості нашої
+                роботи. Тому що ми наймає тільки кращих майстрів Львова зі
+                стажем від трьох років, які знають пристрій яблучної техніки до
+                останнього гвинтика.
+              </p>
+              <p>
+                Крім того, сервісні інженери постійно самонавчатися та
+                підвищують кваліфікацію на базі СЦ iFix. Завдяки такому підходу,
+                ми одними з перших починаємо якісно ремонтувати нові моделі
+                iPhone.
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <section class="main-adress">
+          <h2 class="main-adress__title title">Де можна нас знайти?</h2>
+          <div class="main-adress__text text">
+            <p>
+              Клієнти люблять наш сервіс, завдяки чому ми постійно розширюємося.
+              За 5 років мережа iFix має 12 філій. Вже зараз, можливо, ми
+              відкрилися поруч з Вашим будинком;)
+            </p>
+            <p>
+              Навіть, якщо ви знаходитесь не у Львові, ми все одно допоможемо!
+              Надішліть нам пристрій за допомогою Нової Пошти і наші інженери
+              вже протягом декількох днів відремонтують його. Так навіть, якщо
+              ви з маленького містечка і не маєте можливості приїхати в столицю,
+              ви отримаєте якісний ремонт без переплат.
+            </p>
+            <p>
+              Оплату наше СЦ також приймає двома способами: готівкою або
+              банківською картою. Все для зручності і підвищення швидкості
+              обслуговування клієнта.
+            </p>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer-wrapper">
+          <div class="footer-logo logo">
+            <img src="./assets/images/logo-black.png" alt="logo" />
+          </div>
+          <div class="footer-menu">
+            <ul class="menu">
+              <li class="menu-item">
+                <a class="menu-item__link" href="./pages/repairs.html"
+                  >Ремонти</a
+                >
+              </li>
+              <li class="menu-item">
+                <a class="menu-item__link" href="./pages/about.html">
+                  Про нас</a
+                >
+              </li>
+              <li class="menu-item">
+                <a class="menu-item__link" href="./pages/contacts.html">
+                  Контакти</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-networks">
+            <a class="footer-networks-link" href="#">
+              <img
+                class="footer-networks__img"
+                src="./assets/images/socials/facebook.png"
+                alt=""
+            /></a>
+            <a class="footer-networks-link" href="#">
+              <img
+                class="footer-networks__img"
+                src="./assets/images/socials/youtube.png"
+                alt=""
+            /></a>
+            <a class="footer-networks-link" href="#">
+              <img
+                class="footer-networks__img"
+                src="./assets/images/socials/instagram.png"
+                alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="footer-text">
+          <p>
+            Copyright © iFix є зареєстрованою торговою маркою. Всі права
+            захищені.
+          </p>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

@@ -162,6 +162,10 @@ body {
   padding: 15px;
 }
 
+.main-portfolio-text__link:hover {
+  color: var(--c-secondary);
+}
+
 .main-portfolio-text--bottom {
   padding-bottom: 70px;
   margin-bottom: 0;

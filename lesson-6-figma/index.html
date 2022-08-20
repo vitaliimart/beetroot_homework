@@ -5,34 +5,202 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/styles/normalise.css" />
-    <link rel="stylesheet" href="./assets/styles/variables.css" />
-    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/normalise.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>Maket</title>
   </head>
   <body>
     <div class="wrapper">
+      <!-- HEADER -->
       <header class="header">
-        <nav>
+        <nav class="header-nav">
           <ul class="header-menu">
-            <li class="header-menu__item"><a href="#">Home</a></li>
-            <li class="header-menu__item"><a href="#">About me</a></li>
-            <li class="header-menu__item"><a href="#">Skills</a></li>
-            <li class="header-menu__item"><a href="#">Portfolio</a></li>
-            <li class="header-menu__item"><a href="#">Contacts</a></li>
+            <li class="header-menu-item">
+              <a class="header-menu-item__link" href="#">Home</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-item__link" href="#">About me</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-item__link" href="#">Skills</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-item__link" href="#">Portfolio</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-item__link" href="#">Contacts</a>
+            </li>
           </ul>
         </nav>
       </header>
-
+      <!-- MAIN -->
       <main class="main">
         <section class="main-firstscreen">
+          <div class="main-firstscreen__line"></div>
           <h1 class="main-firstscreen__title">Denis Novik</h1>
-          <div class="main-firstscreen__image">
+          <div class="main-firstscreen__image image">
             <img src="./assets/images/first-screen.jpg" alt="first screen" />
           </div>
         </section>
+        <section class="main-about">
+          <h2 class="main-about__title title">About me</h2>
+          <div class="main-about-text text">
+            <p class="main-about-text__item main-about-text__item--bottom">
+              Hi, I'm Denis - UX/UI designer from Minsk. <br />
+              I'm interested in design and everything connected with it.
+            </p>
+            <p class="main-about-text__item main-about-text__item--bottom">
+              I'm studying at courses "Web and mobile design<br />
+              interfaces" in IT-Academy.
+            </p>
+            <p class="main-about-text__item">
+              Ready to implement excellent projects <br />
+              with wonderful people.
+            </p>
+          </div>
+        </section>
+        <section class="main-skills">
+          <h2 class="main-skills__title title">Skills</h2>
+          <p class="main-skills__text text">I work in such programs as</p>
+          <div class="main-skills-cards">
+            <div class="main-skills-cards-item">
+              <div class="main-skills-cards__image">
+                <img
+                  src="./assets/images/skills/Ps.png"
+                  alt="Image Adobe Photoshop"
+                />
+                <p class="main-skills-cards__subtitle">
+                  Adobe <br />
+                  Photoshop
+                </p>
+                <div class="main-skills-cards__icons">
+                  <span class="main-skills-cards__icon fa fa-lg fa-star"></span>
+                  <span class="main-skills-cards__icon fa fa-lg fa-star"></span>
+                  <span
+                    class="main-skills-cards__icon fa fa-lg fa-star-o"
+                  ></span>
+                  <span
+                    class="main-skills-cards__icon fa fa-lg fa-star-o"
+                  ></span>
+                  <span
+                    class="main-skills-cards__icon fa fa-lg fa-star-o"
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div class="main-skills-cards-item">
+              <div class="main-skills-cards__image">
+                <img
+                  src="./assets/images/skills/Ai.png"
+                  alt="Adobe Illustrator"
+                />
+                <p class="main-skills-cards__subtitle">
+                  Adobe<br />
+                  Illustrator
+                </p>
+                <div class="main-skills-cards__icons">
+                  <span class="main-skills-cards__icon fa fa-lg fa-star"></span>
+                  <span class="main-skills-cards__icon fa fa-lg fa-star"></span>
+                  <span class="main-skills-cards__icon fa fa-lg fa-star"></span>
+                  <span
+                    class="main-skills-cards__icon fa fa-lg fa-star-o"
+                  ></span>
+                  <span
+                    class="main-skills-cards__icon fa fa-lg fa-star-o"
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div class="main-skills-cards-item">
+              <div class="main-skills-cards__image">
+                <img
+                  src="./assets/images/skills/Ae.png"
+                  alt="Adobe After Effects"
+                />
+                <p class="main-skills-cards__subtitle">
+                  Adobe <br />
+                  After Effects
+                </p>
+                <div class="main-skills-cards__icons">
+                  <span class="main-skills-cards__icon fa fa-lg fa-star"></span>
+                  <span class="main-skills-cards__icon fa fa-lg fa-star"></span>
+                  <span class="main-skills-cards__icon fa fa-lg fa-star"></span>
+                  <span class="main-skills-cards__icon fa fa-lg fa-star"></span>
+                  <span
+                    class="main-skills-cards__icon fa fa-lg fa-star-o"
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div class="main-skills-cards-item">
+              <div class="main-skills-cards__image">
+                <img src="./assets/images/skills/Figma.png" alt="Figma" />
+                <p class="main-skills-cards__subtitle">Figma</p>
+                <div class="main-skills-cards__icons">
+                  <span class="main-skills-cards__icon fa fa-lg fa-star"></span>
+                  <span class="main-skills-cards__icon fa fa-lg fa-star"></span>
+                  <span class="main-skills-cards__icon fa fa-lg fa-star"></span>
+                  <span class="main-skills-cards__icon fa fa-lg fa-star"></span>
+                  <span class="main-skills-cards__icon fa fa-lg fa-star"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main-portfolio">
+          <h2 class="main-portfolio-title title">Portfolio</h2>
+          <div class="main-portfolio-item">
+            <div class="main-portfolio__image image">
+              <img
+                src="./assets/images/fashion-store.png"
+                alt="woman fashion clothes"
+              />
+            </div>
+            <p class="main-portfolio-text text">
+              <a class="main-portfolio-text__link" href="#">
+                Online fashion store <br />
+                - Homepage ></a
+              >
+            </p>
+          </div>
+          <div class="main-portfolio-item">
+            <div class="main-portfolio__image image">
+              <img src="./assets/images/reebok_web.png" alt="sneakers reebok" />
+            </div>
+            <p class="main-portfolio-text text">
+              <a class="main-portfolio-text__link" href="#"
+                >Reebok Store - Concept</a
+              >
+            </p>
+          </div>
+          <div class="main-portfolio-item">
+            <div class="main-portfolio__image image">
+              <img
+                src="./assets/images/braun-landing.png"
+                alt="videocamera braun-landing"
+              />
+            </div>
+            <p class="main-portfolio-text main-portfolio-text--bottom text">
+              <a class="main-portfolio-text__link" href="#"
+                >Braun Landing Page - Concept</a
+              >
+            </p>
+          </div>
+        </section>
       </main>
-
+      <!-- FOOTER -->
       <footer></footer>
     </div>
   </body>

@@ -1,6 +1,6 @@
 :root {
   /** Colors */
-  --c-black: #000000;
+  --c-main: #070707;
   --c-text: #828282;
   --c-star-grey: #e5e5e5;
   --c-bg-gray: #f6f6f6;
@@ -13,6 +13,7 @@
   --f-title: 48px;
   --f-subtitle: 34px;
   --f-base: 18px;
+  --f-small: 14px;
 
   /** Font-family */
   --ff-bold: 'Open Sans Bold', sans-serif;

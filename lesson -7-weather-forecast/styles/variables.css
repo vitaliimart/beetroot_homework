@@ -1,0 +1,27 @@
+:root {
+  /** Colors */
+  --c-text: #ffffff;
+  --c-border: #2b81ac;
+  --c-bg: #3399cc;
+  --c-bg-main: #e5e5e5;
+  --c-b1: #3399cc;
+  --c-b2: #33cccc;
+  --c-b3: #996699;
+  --c-b4: #c24747;
+  --c-b5: #e2674a;
+  --c-b6: #ffcc66;
+  --c-b7: #99cc99;
+  --c-b8: #669999;
+  --c-b9: #cc6699;
+  --c-b10: #339966;
+  --c-b11: #666699;
+
+  /** Fonts-size */
+  --f-icon: 42px;
+  --f-title: 21px;
+  --f-main: 22px;
+  --f-small: 16px;
+
+  /** Font-family */
+  --ff-base: 'Lusida Sans', sans-serif;
+}

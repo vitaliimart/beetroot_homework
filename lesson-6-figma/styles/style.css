@@ -60,7 +60,7 @@ body {
 }
 
 .main-firstscreen__image {
-  background-color: var(--c-bg-gray);
+  display: flex;
 }
 
 .image img {

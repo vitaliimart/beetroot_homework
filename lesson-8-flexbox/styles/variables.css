@@ -1,0 +1,26 @@
+:root {
+  /** Colors */
+  --c-logo: #173a56;
+  --c-title: #2f281e;
+  --c-text: #544837;
+  --c-border: #bcd0e5;
+  --c-button-bg: #ff9900;
+  --c-button-text: #ffffff;
+
+  /** Fonts-size */
+  --f-logo: 30px;
+  --f-h1: 44px;
+  --f-title: 36px;
+  --f-subtitle: 22px;
+  --f-footer: 20px;
+  --f-h1-text: 18px;
+  --f-main: 16px;
+
+  /** Font-family */
+  --ff: 'Montserrat', sans-serif;
+
+  /** Cubic-bezier */
+  --b-normal: cubic-bezier(0.4, 0, 0.2, 1);
+  /** Transition */
+  --t-normal: 0.35s var(--b-normal);
+}

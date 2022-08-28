@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/normalise.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Flexbox</title>
+  </head>
+  <body>
+    <div class="app">
+      <!-- HEADER -->
+      <header class="header">
+        <div class="wrapper header-wrapper">
+          <!-- LOGO -->
+          <a href="./index.html" class="logo" title="Productly">
+            <div class="logo-image">
+              <img
+                class="logo-image__item"
+                src="./assets/images/logo.png"
+                alt="logo"
+              />
+            </div>
+            <span class="logo-text">Productly</span>
+          </a>
+          <!-- NAVIGATION -->
+          <div class="header-navigation">
+            <nav class="navigation">
+              <ul class="navigation-list">
+                <li class="navigation-item">
+                  <a class="navigation-item__link" href="#">Product</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-item__link" href="#">Customers</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-item__link" href="#">Pricing</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-item__link" href="#">Resources</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-buttons">
+            <button class="button header-button" type="button" title="Sign In">
+              <span>Sign In</span>
+            </button>
+            <button
+              class="button button--orange header-button"
+              type="button"
+              title="Sign Up"
+            >
+              <span>Sign Up</span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <!-- MAIN -->
+      <main class="main">
+        <div class="wrapper">
+          <section class="first-screen flex-block">
+            <div class="flex-block-item first-screen-left">
+              <h1 class="first-screen-left__title">
+                The Design Thinking superpowers
+              </h1>
+              <p class="first-screen-left__text">
+                Tools, tutorials, design and innovation experts, all in one
+                place! The most intuitive way to imagine your next user
+                experience.
+              </p>
+              <button
+                class="button button--orange button--large main-button"
+                type="button"
+              >
+                <span>Get started</span>
+              </button>
+            </div>
+            <div class="flex-block-item first-screen-right">
+              <img
+                class="flex-image"
+                src="./assets/images/firsrtscreen.png"
+                alt="first screen"
+              />
+            </div>
+          </section>
+          <section class="features flex-block">
+            <h2 class="features-title title">
+              We design tools to unveil <br />your superpowers
+            </h2>
+            <div class="features-cards flex-block">
+              <div class="features-item">
+                <div class="features-item-icon">
+                  <img
+                    class="features-item-icon__img"
+                    src="./assets/icon/arrow.svg"
+                    alt="arrow"
+                  />
+                </div>
+                <h3 class="features-item__subtitle">First click tests</h3>
+                <p class="features-item__text">
+                  While most people enjoy casino gambling.
+                </p>
+              </div>
+              <div class="features-item">
+                <div class="features-item-icon">
+                  <img
+                    class="features-item-icon__img"
+                    src="./assets/icon/icon2.svg"
+                    alt="icon"
+                  />
+                </div>
+                <h3 class="features-item__subtitle">Design surveys</h3>
+                <p class="features-item__text">
+                  Sports betting, lottery and bingo playing for the fun
+                </p>
+              </div>
+              <div class="features-item">
+                <div class="features-item-icon">
+                  <img
+                    class="features-item-icon__img"
+                    src="./assets/icon/heart.svg"
+                    alt="icon heart"
+                  />
+                </div>
+                <h3 class="features-item__subtitle">Preference tests</h3>
+                <p class="features-item__text">
+                  The Myspace page defines the individual.
+                </p>
+              </div>
+              <div class="features-item">
+                <div class="features-item-icon">
+                  <img
+                    class="features-item-icon__img"
+                    src="./assets/icon/watch.svg"
+                    alt="icon watch"
+                  />
+                </div>
+                <h3 class="features-item__subtitle">Five second tests</h3>
+                <p class="features-item__text">
+                  Personal choices and the overall personality of the person.
+                </p>
+              </div>
+            </div>
+            <button
+              class="button button--orange button--large features-button"
+              type="button"
+            >
+              <span>Sign up Now</span>
+            </button>
+          </section>
+          <section class="benefits flex-block">
+            <div class="flex-block-item benefits-left block-text">
+              <p class="block-text-pretext">Effortless Validation for</p>
+              <h2 class="block-text-title title">Design Professionals</h2>
+              <p class="block-text-posttext">
+                The Myspace page defines the individual, his or her
+                characteristics, traits, personal choices and the overall
+                personality of the person.
+              </p>
+              <div class="block-list">
+                <h4 class="block-list__subtitle">Accessory makers</h4>
+                <p class="block-list__item">
+                  While most people enjoy casino gambling, sports betting,
+                  lottery and bingo playing for the fun
+                </p>
+                <h4 class="block-list__subtitle">Alterationists</h4>
+                <p class="block-list__item">
+                  If you are looking for a new way to promote your business that
+                  won’t cost you more money,
+                </p>
+                <h4 class="block-list__subtitle">Custom Design designers</h4>
+                <p class="block-list__item">
+                  If you are looking for a new way to promote your business that
+                  won’t cost you more money,
+                </p>
+              </div>
+            </div>
+            <div class="flex-block-item benefits-right">
+              <img
+                class="flex-image"
+                src="./assets/images/benefits.png"
+                alt="benefits"
+              />
+            </div>
+          </section>
+          <section class="product-managers flex-block">
+            <div class="flex-block-item product-managers-left">
+              <img
+                class="flex-image"
+                src="./assets/images/product-managers.png"
+                alt="benefits"
+              />
+            </div>
+            <div class="flex-block-item product-managers-right block-text">
+              <p class="block-text-pretext">Easier decision making for</p>
+              <h2 class="block-text-title title">Product Managers</h2>
+              <p class="block-text-posttext product-managers--width">
+                The Myspace page defines the individual, his or her
+                characteristics, traits, personal choices and the overall
+                personality of the person.
+              </p>
+              <div class="product-managers-list">
+                <div class="product-managers-list-item flex-block">
+                  <img
+                    class="flex-image product-managers__image"
+                    src="./assets/icon/checked.svg"
+                    alt="icon checked"
+                  />
+                  <p class="block-list__item product-managers-text__item">
+                    Never worry about overpaying for your energy bill again.
+                  </p>
+                </div>
+                <div class="product-managers-list-item flex-block">
+                  <img
+                    class="flex-image product-managers__image"
+                    src="./assets/icon/checked.svg"
+                    alt="icon checked"
+                  />
+                  <p class="block-list__item product-managers-text__item">
+                    We will only switch you to energy companies that we trust
+                    and will treat you right.
+                  </p>
+                </div>
+                <div class="product-managers-list-item flex-block">
+                  <img
+                    class="flex-image product-managers__image"
+                    src="./assets/icon/checked.svg"
+                    alt="icon checked"
+                  />
+                  <p class="block-list__item product-managers-text__item">
+                    We track the markets daily and know where the savings are.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="marketers flex-block">
+            <div class="flex-block-item marketers-left block-text">
+              <p class="block-text-pretext">Optimisation for</p>
+              <h2 class="block-text-title title">Marketers</h2>
+              <p class="block-text-posttext">
+                Few would argue that, despite the advancements of feminism over
+                the past three decades, women still face a double standard when
+                it comes to their behavior.
+              </p>
+              <div class="block-list">
+                <h4 class="block-list__subtitle">Accessory makers</h4>
+                <p class="block-list__item">
+                  While most people enjoy casino gambling, sports betting,
+                  lottery and bingo playing for the fun
+                </p>
+                <h4 class="block-list__subtitle">Accessory makers</h4>
+                <p class="block-list__item">
+                  If you are looking for a new way to promote your business that
+                  won’t cost you more money,
+                </p>
+                <h4 class="block-list__subtitle">Custom Design designers</h4>
+                <p class="block-list__item">
+                  If you are looking for a new way to promote your business that
+                  won’t cost you more money,
+                </p>
+              </div>
+            </div>
+            <div class="flex-block-item marketers-right">
+              <img
+                class="flex-image"
+                src="./assets/images/marketers.png"
+                alt="benefits"
+              />
+            </div>
+          </section>
+          <div class="line"></div>
+        </div>
+      </main>
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="wrapper footer-wrapper">
+          <!-- LOGO -->
+          <a href="./index.html" class="logo" title="Productly">
+            <div class="logo-image">
+              <img
+                class="logo-image__item"
+                src="./assets/images/logo.png"
+                alt="logo"
+              />
+            </div>
+            <span class="logo-text">Productly</span>
+          </a>
+          <!-- NAVIGATION -->
+          <div class="footer-navigation footer-navigation-first">
+            <nav class="navigation">
+              <span class="footer__title">Quick Links</span>
+              <ul class="navigation-list footer-navigation-list">
+                <li class="navigation-item footer-navigation-item">
+                  <a class="navigation-item__link" href="#">About Us</a>
+                </li>
+                <li class="navigation-item footer-navigation-item">
+                  <a class="navigation-item__link" href="#">Blog</a>
+                </li>
+                <li class="navigation-item footer-navigation-item">
+                  <a class="navigation-item__link" href="#">Contact</a>
+                </li>
+                <li class="navigation-item footer-navigation-item">
+                  <a class="navigation-item__link" href="#">FAQ</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-navigation footer-navigation-second">
+            <nav class="navigation">
+              <span class="footer__title">Legal Stuff</span>
+              <ul class="navigation-list footer-navigation-list">
+                <li class="navigation-item footer-navigation-item">
+                  <a class="navigation-item__link" href="#">Disclaimer</a>
+                </li>
+                <li class="navigation-item footer-navigation-item">
+                  <a class="navigation-item__link" href="#">Financing</a>
+                </li>
+                <li class="navigation-item footer-navigation-item">
+                  <a class="navigation-item__link" href="#">Privacy Policy</a>
+                </li>
+                <li class="navigation-item footer-navigation-item">
+                  <a class="navigation-item__link" href="#">Terms of Service</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-form">
+            <form class="form" action="#" method="post">
+              <label for="POST-name" class="footer__title footer__title--bottom"
+                >Knowing you're always on the best energy deal.
+              </label>
+              <input
+                class="footer__input"
+                id="POST-name"
+                type="text"
+                name="name"
+                placeholder="Enter your phone Number"
+              />
+            </form>
+            <button
+              class="button button--orange footer-button"
+              type="submit"
+              title="Sign up Now"
+            >
+              <span>Sign up Now</span>
+            </button>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

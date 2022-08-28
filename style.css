@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  padding: 15px 30px;
+}
+
+li {
+  font-size: 20px;
+  list-style: none;
+  margin-bottom: 10px;
+}
+a {
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+  padding: 15px 30px;
+  color: #000;
+}
+
+a:hover {
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  color: #008000;
+}

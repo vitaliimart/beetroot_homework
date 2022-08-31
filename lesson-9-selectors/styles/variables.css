@@ -1,0 +1,24 @@
+:root {
+  /** Colors */
+  --c-secondary: #ff8984;
+  --c-text: #ffffff;
+  --c-header: #4a4f56;
+  --c-main: #3b3f45;
+  --c-input: #88839e;
+  --c-secondinput: #7a7593;
+  --c-thirdinput: #625e77;
+	--c-check: #000;
+	--c-checked: #9B96AC;
+
+  /** Fonts-size */
+  --f-subtitle: 16px;
+  --f-regular: 18px;
+  --f-title: 24px;
+  --f-small: 11px;
+
+  /** Font-family */
+  --ff: 'Roboto', sans-serif;
+
+  /** Transition */
+  --t-normal: all 0.1s ease-in;
+}

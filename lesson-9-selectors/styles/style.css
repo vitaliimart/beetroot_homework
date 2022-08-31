@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: var(--f-regular);
+  background: var(--c-main);
+  font-family: var(--ff);
+}
+
+.wrapper {
+  max-width: 534px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.header {
+  background: var(--c-header);
+  color: var(--c-secondary);
+  text-align: center;
+  display: flex;
+}
+
+.header__title {
+  font-size: var(--f-title);
+  margin-bottom: 4px;
+  line-height: 28px;
+  margin-top: 19px;
+  font-weight: 700;
+}
+
+.header__text {
+  margin-bottom: 12px;
+  line-height: 19px;
+}
+
+.main {
+  display: flex;
+  color: var(--c-text);
+  margin-bottom: 45px;
+  margin-top: 20px;
+}
+
+/* Контейнер для інпута*/
+.form-container {
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid transparent;
+  background-color: var(--c-input);
+  transition: var(--t-normal);
+  padding: 11px 0 13px 47px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  position: relative;
+  line-height: 21px;
+  user-select: none;
+  cursor: pointer;
+  display: block;
+}
+
+/* Стилізація парних нащадків */
+.form-container:nth-child(2n) {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background-color: var(--c-secondinput);
+}
+
+/* Стилізація інпутів при наведенні курсора миші */
+.form-container:hover {
+  border-bottom: 3px solid var(--c-text);
+  background-color: var(--c-thirdinput);
+  border-top: 3px solid var(--c-text);
+  transition: var(--t-normal);
+}
+
+.form-container:active {
+  border-bottom: 3px solid var(--c-text);
+  background-color: var(--c-secondary);
+  border-top: 3px solid var(--c-text);
+  transition: var(--t-normal);
+}
+
+/* Приховуємо дефолтний флажок */
+.form-container .check-form-item {
+  position: absolute;
+  opacity: 0;
+}
+/* Створюємо кастомний чекбокс */
+.form-item2 {
+  background-color: #eee;
+  position: absolute;
+  padding-left: 12px;
+  height: 19px;
+  width: 19px;
+  left: 12px;
+  top: 11px;
+}
+
+/* Коли відмічено чекбокс, то змінюємо стилі */
+.check-form-item:checked ~ .decor-text {
+  text-decoration: line-through;
+}
+
+/* Створюємо, коли відмічено (не видно, кол не відмічено) */
+.form-item2:after {
+  position: absolute;
+  display: none;
+  content: '';
+}
+/* Показуємо, коли відмічено */
+.check-form-item:checked ~ .form-item2:after {
+  display: block;
+}
+/* Стилі галочки чекбокса */
+.form-item2:after {
+  border: solid var(--c-check);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  height: 6px;
+  width: 4px;
+  left: 6px;
+  top: 4px;
+}
+
+/* Стилі тексту у дужках */
+.small-text {
+  font-size: var(--f-small);
+  vertical-align: middle;
+  line-height: 13px;
+}
+
+/* Футер */
+.footer {
+  color: var(--c-secondary);
+}
+
+.footer__text {
+  background-color: var(--c-header);
+  justify-content: center;
+  line-height: 21px;
+  display: flex;
+  padding: 12px 0;
+}
+
+/* В рішенні обов’язково повинні бути використані селектори:
+за елементом
+за класом
+за атрибутом
+селектор сусідів “+”
+:hover
+:active
+:checked
+:before і :after
+:nth-child */

@@ -9,16 +9,17 @@ body {
 }
 
 .wrapper {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   width: 100%;
 }
 
 .main {
+  transition: 2s var(--t-spinner);
   position: relative;
   overflow: hidden;
-  margin-top: 40px;
-  max-width: 800px;
+  margin: 40px auto;
+  width: 800px;
   height: 800px;
 }
 
@@ -71,22 +72,22 @@ body {
 
 .circle--45 {
   top: var(--calc-small);
-  left: var(--calc-small-two);
+  left: var(--calc-small);
 }
 
 .circle--135 {
   top: var(--calc-small);
-  right: var(--calc-small-two);
+  right: var(--calc-small);
 }
 
 .circle--225 {
   bottom: var(--calc-small);
-  right: var(--calc-small-two);
+  right: var(--calc-small);
 }
 
 .circle--315 {
   bottom: var(--calc-small);
-  left: var(--calc-small-two);
+  left: var(--calc-small);
 }
 
 /* Lines */
@@ -112,7 +113,9 @@ body {
 }
 
 .main:hover {
-  animation: spinner var(--t-spinner);
+  animation: spinner 5s var(--t-spinner);
+  width: 700px;
+  height: 700px;
 }
 
 @keyframes spinner {

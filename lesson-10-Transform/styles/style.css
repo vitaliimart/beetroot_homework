@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: var(--c-bg);
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.main {
+  position: relative;
+  overflow: hidden;
+  margin-top: 40px;
+  max-width: 800px;
+  height: 800px;
+}
+
+/* Yellow circle */
+.circle--center {
+  background: var(--c-center-circle);
+  left: var(--calc-yellow);
+  top: var(--calc-yellow);
+  height: 256px;
+  width: 256px;
+  z-index: 100;
+}
+
+/* Other circles */
+.circle {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-other__item {
+  background-color: var(--c-other-circle);
+  height: 170px;
+  width: 170px;
+  z-index: 99;
+}
+
+.circle--diagonal {
+  height: 130px;
+  width: 130px;
+}
+
+.circle--0 {
+  top: var(--calc-middle);
+  left: 0px;
+}
+
+.circle--90 {
+  left: var(--calc-middle);
+}
+
+.circle--180 {
+  top: var(--calc-middle);
+  right: 0px;
+}
+
+.circle--270 {
+  left: var(--calc-middle);
+  bottom: 0px;
+}
+
+.circle--45 {
+  top: var(--calc-small);
+  left: var(--calc-small-two);
+}
+
+.circle--135 {
+  top: var(--calc-small);
+  right: var(--calc-small-two);
+}
+
+.circle--225 {
+  bottom: var(--calc-small);
+  right: var(--calc-small-two);
+}
+
+.circle--315 {
+  bottom: var(--calc-small);
+  left: var(--calc-small-two);
+}
+
+/* Lines */
+.line {
+  background-color: var(--c-line);
+  width: calc(100% - 340px);
+  top: calc(50% - 3px);
+  position: absolute;
+  height: 6px;
+  left: 170px;
+}
+
+.line--45 {
+  transform: rotate(45deg);
+}
+
+.line--90 {
+  transform: rotate(90deg);
+}
+
+.line--135 {
+  transform: rotate(135deg);
+}
+
+.main:hover {
+  animation: spinner var(--t-spinner);
+}
+
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

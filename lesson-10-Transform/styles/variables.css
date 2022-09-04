@@ -1,0 +1,16 @@
+:root {
+  /** Colors */
+  --c-bg: #414453;
+  --c-line: #808391;
+  --c-center-circle: #ffcf6d;
+  --c-other-circle: #ff545b;
+
+  /* *Sizes */
+  --calc-yellow: calc(50% - 128px);
+  --calc-middle: calc(50% - 85px);
+  --calc-small: calc(25% - 75px);
+  --calc-small-two: calc(25% - 71px);
+
+  /** Transition */
+  --t-spinner: 9s cubic-bezier(0.38, 0.08, 0.4, 0.94);
+}

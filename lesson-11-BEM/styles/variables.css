@@ -1,0 +1,27 @@
+:root {
+  /** Colors */
+  --c-hover-card: #18b5dc;
+	--c-team-icon: #5DCBE6;
+  --c-text-card: #646464;
+  --c-white: #ffffff;
+  --c-text: #3c3c3c;
+  --c-logo: #282528;
+  --c-line: #dddbdb;
+  --c-bg: #f6f6f6;
+
+  /** Fonts-size */
+  --f-title: 34px;
+  --f-logo: 30px;
+  --f-menu: 20px;
+  --f-card: 18px;
+  --f-text: 16px;
+
+  /** Font-family */
+  --ff-Lato: 'Lato', sans-serif;
+  --ff-Train: 'Train One', cursive;
+
+  /** Cubic-bezier */
+  --b-normal: cubic-bezier(0.4, 0, 0.2, 1);
+  /** Transition */
+  --t-normal: 0.35s var(--b-normal);
+}

@@ -1,0 +1,25 @@
+// * Colors
+$c-slidertitle: #666666;
+$c-slidertext: #333333;
+$c-slidericon: #CCCCCC;
+$c-headtext: #898F8F;
+$c-gold: #FFCC00;
+$c-bg: #ffffff;
+
+// * Font-size
+$fs-slidersubtitle: 24px;
+$fs-slidertitle: 36px;
+$fs-slidertext: 14px;
+$fs-headtitle: 60px;
+$fs-headtext: 18px;
+
+// *Fonts
+$ff-roboto: 'Roboto', sans-serif;
+$ff-raleway: 'Raleway', sans-serif;
+$ff-opensans: 'Open Sans', sans-serif;
+
+// * Cubic-bezier
+$b-normal: cubic-bezier(0.4, 0, 0.2, 1);
+// * Transition
+$t-normal: 0.35s var($b-normal);
+

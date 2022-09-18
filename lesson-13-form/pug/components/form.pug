@@ -1,0 +1,53 @@
+mixin form()
+	//- FORM
+	form(action="#" method="post").form
+		.form__wrapper
+			//- Form title
+			h2.form__title Create an Account
+			//- Form content
+			.form__content
+				.form__item
+					label(for="username").form__label 
+						.form__text First Name
+						input(type="text" name="username" id="username").form__input
+				.form__item
+					label(for="surname").form__label
+						.form__text Last Name
+						input(type="text" name="surname" id="surname").form__input
+				.form__item.form__item--large
+					label(for="email").form__label
+						.form__text Email
+						input(type="email" name="email" id="email").form__input
+						.form__subtext.form__subtext--top We'll never share your email with anyone else.
+				.form__item.form__item--radio
+					label(for="male").form__label
+						input(type="radio" name="gender" value="male" id="male" checked).form__input
+						.form__text Male
+					label(for="female").form__label
+						input(type="radio" name="gender" value="female" id="female").form__input
+						.form__text Female
+				.form__item
+					label(for="country").form__label
+						.form__text Country
+						select(name="country" id="country").form__input
+							option(value="") Select
+							option(value="Ukraine") Ukraine
+							option(value="France") France
+							option(value="England") England
+							option(value="USA") USA
+				.form__item
+					label(for="city").form__label
+						.form__text City
+						input(type="text" name="city" id="city").form__input
+			//- Form footer
+			.form__footer 
+				button(type='submit').form__button.form__button--large
+					span Sign Up
+				.form__subtext By clicking the 'Sign Up' button, you confirm that you accept our 
+					br
+					a(href="#").form__link Terms of Use 
+					span and 
+					a(href="#").form__link Privacy Policy
+				.form__line
+				.form__text Have an account?
+					a(href="#").form__link Log In

@@ -1,0 +1,27 @@
+// * Colors
+$c-sub-text: #969696;
+$c-button: #007BFF;
+$c-border: #E4E4E4;
+$c-title: #1C1C1C;
+$c-frame: #E5E5E5;
+$c-text: #545454;
+$c-bg: #FFFFFF;
+
+// * Font
+$ff: 'Roboto', sans-serif;
+
+// * Font size
+$fs-large: 24px;
+$fs-small: 13px;
+$fs-base: 15px;
+
+// * Transition
+$t-normal: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+
+// * Media queries
+$m-small: 320px;
+$m-phone: 480px;
+$m-tablet: 768px; 
+$m-desktop: 1024px;
+$m-screen: 1400px;
+$m-large: 1920px;

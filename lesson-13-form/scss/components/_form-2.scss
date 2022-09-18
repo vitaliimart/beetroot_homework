@@ -1,0 +1,90 @@
+.form__head {
+	margin-bottom: 25px;
+	display: flex;
+}
+
+.form__avatar {
+	margin-right: 20px;
+	border-radius: 50%;
+	max-height: 80px;
+	max-width: 80px;
+}
+
+.form__load {
+	margin-top: 11px;
+	display: flex;
+
+	.form__label {
+		position: relative;
+	}
+
+	.form__image {
+		position: absolute;
+		color: $c-sub-text;
+		max-height: 14px;
+		max-width: 14px;
+		right: 8px;
+		top: 7px;
+	}
+
+	.input-container {
+		border: 1px solid $c-border;
+		transition: $t-normal;
+		border-radius: 5px;
+		max-width: 138px;
+		max-height: 30px;
+
+		&--small {
+			border: 1px solid $c-border;
+			max-width: 30px;
+		}
+
+		&:active, &:hover, &:focus {
+			border: 1px solid $c-button;
+			outline-offset: 0;
+			cursor: pointer;
+			outline: 0;
+		}	
+	}
+
+	.form__input {
+		box-sizing: border-box;
+		transition: $t-normal;
+		max-width: 138px;
+		max-height: 30px;
+
+		&[type="file"], &[type="reset"] {
+			visibility: hidden;
+		}
+
+		&:last-child {
+			max-width: 30px;
+		}
+	}
+
+	.form__upload {
+		margin-right: 10px;
+
+		.form__subtext {
+			margin-top: 12px;
+		}
+	}
+}
+
+.form__delete .form__image {
+	left: calc(50% - 7px);
+	top: calc(50% - 7px);
+}
+
+.bottom-12 {
+	margin-bottom: 12px;
+}
+
+.bottom-25 {
+	margin-bottom: 25px;
+}
+
+.bottom-88 {
+	margin-bottom: 88px;
+}
+

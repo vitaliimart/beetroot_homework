@@ -1,0 +1,57 @@
+mixin form-2()
+	//- FORM
+	form(action="#" method="post").form
+		.form__wrapper
+			//- Form title
+			h2.form__title Profile
+			//- Form content
+			.form__content
+				.form__head
+					.form__avatar
+						img(src="/assets/images/avatar.png", alt="avatar").form__image
+					.form__load
+						.form__upload
+							label(for="upload").form__label
+								img(src="/assets/images/icons/camera.svg", alt="icon camera").form__image
+								.input-container
+									input(type="file" name="upload" id="upload").form__input.bottom-12
+								.form__subtext Up to 1MB (300x300 px)
+						.form__delete
+							label(for="delete").form__label
+								img(src="/assets/images/icons/bucket.svg", alt="icon bucket").form__image
+								.input-container.input-container--small
+									input(type="reset" name="delete" id="delete").form__input
+				.form__item.bottom-25
+					label(for="usernames").form__label
+						.form__text Name
+						input(type="text" name="username" id="usernames").form__input
+				.form__item.bottom-25
+					label(for="emails").form__label
+						.form__text Email
+						input(type="email" name="email" id="emails").form__input
+				.form__item.bottom-25
+					label(for="countries").form__label
+						.form__text Country
+						//- input(type="text" name="country" id="countries" placeholder="Select").form__input
+						select(name="country" id="country").form__input
+							option(value="") Select
+							option(value="Ukraine") Ukraine
+							option(value="France") France
+							option(value="England") England
+							option(value="USA") USA
+				.form__item.bottom-25
+					label(for="cities").form__label
+						.form__text City
+						input(type="text" name="city" id="cities").form__input
+				.form__item
+					label(for="number").form__label
+						.form__text Zip Code
+						input(type="number" name="number" id="number").form__input
+				.form__item
+					label(for="phone").form__label
+						.form__text Phone Number
+						input(type="tel" name="phone" id="phone").form__input
+			//- Form footer
+			.form__footer 
+				button(type='submit').form__button.bottom-88
+					span Update

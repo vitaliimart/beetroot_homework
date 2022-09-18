@@ -19,6 +19,10 @@
 	margin-top: 11px;
 	display: flex;
 
+	.form__image:hover {
+		cursor: pointer;
+	}
+
 	.form__label {
 		position: relative;
 	}

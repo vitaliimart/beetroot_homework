@@ -13,6 +13,7 @@ alert('Правильні імена змінних: name, surName, $name, _surn
 
 // Неправильні імена змінних
 /*
+let some name = Andrew;
 let 7name = Olya;
 const my-surname = "Bardash";
 let let = "Orest";

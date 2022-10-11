@@ -1,0 +1,36 @@
+// * Colors
+$c-icon-border: rgba(21, 101, 216, 0.1);
+$c-social-icon: #0d0d0d;
+$c-light-gray: #7690a8;
+$c-icon-hover: #3db370;
+$c-icon-base: #007ffc;
+$c-bg-item: #e5eaf4;
+$c-border: #efeef3;
+$c-text: #16133d;
+$c-bg: #ffffff;
+
+// *Colors icons-cards
+$c-icon-1: #d1e7ff;
+$c-icon-2: #e8f3ff;
+$c-icon-3: #b9dcff;
+$c-icon-4: #007ffc;
+$ch-icon-1: #e1f4f5;
+$ch-icon-2: #f4feff;
+$ch-icon-3: #caeff2;
+$ch-icon-4: #52c29d;
+
+// * Font-size
+$fs-subtitle: 24px;
+$fs-title: 40px;
+$fs-base: 16px;
+$fs-logo: 35px;
+
+// *Fonts
+$ff-roboto: 'Roboto', sans-serif;
+$ff-quicksand: 'Quicksand', sans-serif;
+$ff-nunito: 'Nunito Sans', sans-serif;
+
+// * Cubic-bezier
+$b-normal: cubic-bezier(0.4, 0, 0.2, 1);
+// * Transition
+$t-normal: 0.35s var($b-normal);

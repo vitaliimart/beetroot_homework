@@ -6,7 +6,7 @@ const car = {
   middleSpeed: 140,
   volumeFuel: 40,
   consumptionFuel: 14,
-  driver: prompt("Введіть ім'я водія"),
+  driver: prompt("Введіть будь-яке ім'я водія"),
 };
 
 // Завдання 1 - Метод, який виводить на екран інформацію про автомобіль
@@ -29,17 +29,19 @@ car.addVodii = () => {
     }
   }
 };
-console.log(listDrivers);
+
 car.addVodii();
+console.log(listDrivers);
 
 // Завдання 3 - Перевірка водія на наявність його ім’я у списку
 car.checkVodii = () => {
   let name = prompt(
-    "Введіть ім'я водія. Спробуйте ввести - Андрій,Ярик,Петро чи введене в промпт"
+    "Введіть ім'я водія. Спробуйте ввести - Андрій,Ярик,Петро чи введене через промпт"
   );
-  for (key of listDrivers) {
+  for (let key of listDrivers) {
     if (key == name) {
       console.log(`Введене ім'я ${name} є у списку водіїв`);
+      break;
     } else {
       console.log(`Такого імені ${name} немає у списку водіїв`);
     }

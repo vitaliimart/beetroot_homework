@@ -222,7 +222,7 @@ myTime.showChangeHours = () => {
 let taskNorma = prompt(
   'Щоб побачити рішення ДЗ:НОРМА, введи №: 1 (функція показує базовий час), 2(зміна часу через введення секунд), 3(зміна часу через введення хвилин) або 4(зміна часу через введення годин). Дивись в консоль'
 );
-if (task == '1') {
+if (taskNorma == '1') {
   myTime.showBaseTime();
 } else if (taskNorma == '2') {
   myTime.showChangeSecond();

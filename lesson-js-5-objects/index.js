@@ -38,12 +38,15 @@ car.checkVodii = () => {
   let name = prompt(
     "Введіть ім'я водія. Спробуйте ввести - Андрій,Ярик,Петро чи введене через промпт"
   );
-  for (let key of listDrivers) {
-    if (key == name) {
+  for (let i = 0; i < listDrivers.length; i++) {
+    if (listDrivers[listDrivers.length - 1] !== name) {
+      console.log(`Ім'я ${name} відсутнє у списку водіїв`);
+      break;
+    } else if (listDrivers[i] !== name) {
+      continue;
+    } else {
       console.log(`Введене ім'я ${name} є у списку водіїв`);
       break;
-    } else {
-      console.log(`Такого імені ${name} немає у списку водіїв`);
     }
   }
 };

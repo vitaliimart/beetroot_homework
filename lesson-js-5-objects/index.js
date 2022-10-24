@@ -61,9 +61,9 @@ car.getTimeFuel = () => {
   distance = Math.abs(
     +prompt('Введіть відстань, яку треба проїхати на автомобілі, в км')
   );
-  activeTime = Math.round((distance / car.middleSpeed) * 10) / 10;
+  activeTime = Math.floor((distance / car.middleSpeed) * 10) / 10;
   if (activeTime / 4 >= 1) {
-    roadTime = activeTime + Math.round(activeTime / 4);
+    roadTime = activeTime + Math.floor(activeTime / 4);
   } else {
     roadTime = activeTime;
   }

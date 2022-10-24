@@ -9,55 +9,55 @@ let shoppingList = [
 ];
 
 // Завдання 1 - Виводити весь список на екран таким чином, щоб спочатку йшли продукти, що ще не придбані, а потім - ті, що вже придбали.
-// shoppingList.sort(function (a) {
-//   if (a.bought == false) {
-//     return -1;
-//   } else {
-//     return 1;
-//   }
-// });
-// console.log('Сортування масиву: спочатку false, потім true');
-// console.log(shoppingList);
+shoppingList.sort(function (a) {
+  if (a.bought == false) {
+    return -1;
+  } else {
+    return 1;
+  }
+});
+console.log('Сортування масиву: спочатку false, потім true');
+console.log(shoppingList);
 
 // Завдання 2 - Покупка продукту. Функція приймає назву продукту і відзначає його як придбаний.
-// function buyProduct(name) {
-//   for (let key in shoppingList) {
-//     if (shoppingList[key].name == name) {
-//       shoppingList[key].bought = true;
-//     } else {
-//       shoppingList[key];
-//     }
-//   }
-// }
+function buyProduct(name) {
+  for (let key in shoppingList) {
+    if (shoppingList[key].name == name) {
+      shoppingList[key].bought = true;
+    } else {
+      shoppingList[key];
+    }
+  }
+}
 
-// buyProduct('apple');
-// console.log('Ця функція змінює у полі "bought" значення false на true');
-// console.log(shoppingList);
+buyProduct('apple');
+console.log('Ця функція змінює у полі "bought" значення false на true');
+console.log(shoppingList);
 
 // ?--------------------ДОМАШНЕЄ ЗАВДАННЯ: НОРМА----------------------
 // Задача 1 - Видалення продукту зі списку (видалення повинно проводитися шляхом створення нового масиву, в якому продукт, що ми шукаємо, буде відсутнім)
 
-// shoppingList.splice(
-//   2,
-//   1,
-//   'тут видалено елемент через splice - можу прибрати інфо'
-// );
-// let shoppingListNew = [];
+shoppingList.splice(
+  2,
+  1,
+  'тут видалено елемент через splice - можу прибрати інфо'
+);
+let shoppingListNew = [];
 
-// shoppingList.filter(() => {
-//   for (let key in shoppingList) {
-//     if (key == undefined) {
-//       continue;
-//     } else {
-//       for (let i = 0; i < shoppingList.length; i++) {
-//         shoppingListNew[i] = shoppingList[i];
-//       }
-//     }
-//   }
-// });
+shoppingList.filter(() => {
+  for (let key in shoppingList) {
+    if (key == undefined) {
+      continue;
+    } else {
+      for (let i = 0; i < shoppingList.length; i++) {
+        shoppingListNew[i] = shoppingList[i];
+      }
+    }
+  }
+});
 
-// console.log('Цей список сформовано з видаленням заданого індексу масиву');
-// console.log(shoppingListNew);
+console.log('Цей список сформовано з видаленням заданого індексу масиву');
+console.log(shoppingListNew);
 
 // Задача 2 - Додавання покупки в список. Враховуй, що при додаванні покупки з уже існуючим в списку продуктом, необхідно збільшувати кількість в існуючій покупці, а не додавати нову. При цьому також повинна змінитися сума, наприклад, якщо ціна за одиницю 12, а кількості товарів стало 2, то сума буде 24.
 function addPurchase(name, quantity, bought, price) {

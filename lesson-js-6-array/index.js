@@ -82,7 +82,6 @@ function addPurchase(name, quantity, bought, price) {
 
 addPurchase('pipe', 1, false, 56);
 addPurchase('onion', 13, true, 123);
-addPurchase('milk', 45);
 addPurchase('orange', 45);
 
 console.log('Цей список сформовано на основі додавання нових елементів');

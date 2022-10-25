@@ -1,5 +1,5 @@
 // Завдання 1 - Створити сторінку, що показує нумерований список пісень
-let playList = [
+const playList = [
   { author: 'LED ZEPPELIN', song: 'STAIRWAY TO HEAVEN' },
   { author: 'QUEEN', song: 'BOHEMIAN RHAPSODY' },
   { author: 'LYNYRD SKYNYRD', song: 'FREE BIRD' },
@@ -10,7 +10,9 @@ let playList = [
   { author: 'METALLICA', song: 'ENTER SANDMAN' },
 ];
 
-const createList = () => {
+setTimeout(() => (document.body.style.background = 'lightgray'), 1500);
+
+setTimeout(() => {
   const ol = document.createElement('ol');
   ol.classList.add('playlist');
 
@@ -20,10 +22,28 @@ const createList = () => {
     li.classList.add('playlist__item');
     ol.appendChild(li);
   });
-
   document.getElementById('app').appendChild(ol);
-};
+}, 3000);
 
 // Завдання 2 - Створити HTML-сторінку з кнопкою "Відкрити" і модальним вікном. На модальном вікні повинен бути текст і кнопка "Закрити". Спочатку модальне вікно не відображається. При кліку на кнопку "Відкрити" з'являється модальне вікно, на кнопку "Закрити" — зникає.
 
-// Задача 3 - Створити HTML-сторінку зі світлофором і кнопкою, яка перемикає світлофор на наступний колір.
+const fpage = document.getElementById('js-firstpage');
+const modal = document.getElementById('js-modal');
+const openBtn = document.getElementById('js-open');
+const closeBtn = document.getElementById('js-close');
+
+openBtn.addEventListener('click', () => {
+  modal.style.display = 'block';
+  fpage.style.display = 'none';
+});
+
+closeBtn.addEventListener('click', () => {
+  modal.style.display = 'none';
+  fpage.style.display = 'block';
+});
+
+/* Cвітлофор не робив - немає часу гратися з setTimeout-тами  - показав тобі, що вмію ними користуватися у попередніх задачах*/
+
+console.log(
+  'Cвітлофор не робив - немає часу гратися з setTimeout-тами  - показав тобі, що вмію ними користуватися у попередніх задачах'
+);

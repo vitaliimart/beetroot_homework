@@ -22,7 +22,7 @@ body {
 }
 
 /* Стилізація плей-листу */
-.title {
+.first-block__title {
   font-size: 36px;
   color: green;
 }
@@ -59,6 +59,10 @@ body {
   color: #000;
 }
 
+.first-block__button {
+  margin-bottom: 30px;
+}
+
 /* Стилізація модального вікна*/
 .modal {
   background-color: rgba(0, 0, 0, 0);
@@ -85,3 +89,42 @@ body {
   color: blue;
 }
 
+/* Стилізація світлофора*/
+.second-block__lights {
+  margin-bottom: 20px;
+}
+
+.second-block__item {
+  background-color: #808080;
+  border: 1px solid #000;
+  border-radius: 50px;
+  margin-bottom: 15px;
+  height: 80px;
+  width: 80px;
+}
+
+.second-block__item:last-child {
+  margin-bottom: 0;
+}
+
+.green {
+  background-color: #008000;
+}
+
+.yellow {
+  background-color: #ffff00;
+}
+
+.red {
+  background-color: #ff0000;
+}
+
+.disactive {
+  background-color: #808080;
+}
+
+.second-block__button {
+  box-shadow: 3px 3px 10px rgba(128, 128, 128, 0.878);
+  border: 1px solid #808080;
+  color: #808080;
+}

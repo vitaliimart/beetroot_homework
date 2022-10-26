@@ -42,8 +42,23 @@ closeBtn.addEventListener('click', () => {
   fpage.style.display = 'block';
 });
 
-/* Cвітлофор не робив - немає часу гратися з setTimeout-тами  - показав тобі, що вмію ними користуватися у попередніх задачах*/
+// Завдання 3 - Створити HTML-сторінку зі світлофором і кнопкою, яка перемикає світлофор на наступний колір.
+const greenColor = document.getElementById('js-green');
+const yellowColor = document.getElementById('js-yellow');
+const redColor = document.getElementById('js-red');
+const changeBtn = document.getElementById('js-choose');
 
-console.log(
-  'Cвітлофор не робив - немає часу гратися з setTimeout-тами  - показав тобі, що вмію ними користуватися у попередніх задачах'
-);
+changeBtn.addEventListener('click', () => {
+  changeBtn.addEventListener('click', () => {
+    if (greenColor.classList.toggle('disactive')) {
+      yellowColor.classList.toggle('disactive');
+    } else if (yellowColor.classList.toggle('disactive')) {
+      yellowColor.classList.toggle('disactive');
+      redColor.classList.toggle('disactive');
+    } else {
+      yellowColor.classList.toggle('disactive');
+      redColor.classList.toggle('disactive');
+    }
+  });
+});
+

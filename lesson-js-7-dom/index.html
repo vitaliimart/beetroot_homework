@@ -10,12 +10,26 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="first-block" id="js-firstpage">
-        <h1 class="title">Домашнє завдання по DOM</h1>
-        <div id="app"></div>
-        <button type="button" class="button" id="js-open">
-          <span>Відкрити</span>
-        </button>
+      <div class="first-page" id="js-firstpage">
+        <div class="first-block">
+          <h1 class="first-block__title">Домашнє завдання по DOM</h1>
+          <div class="first-block__app" id="app"></div>
+          <button type="button" class="button first-block__button" id="js-open">
+            <span>Відкрити</span>
+          </button>
+        </div>
+        <div class="second-block">
+          <div class="second-block__lights">
+            <div class="second-block__item green" id="js-green"></div>
+            <div
+              class="second-block__item yellow disactive" id="js-yellow"
+            ></div>
+            <div class="second-block__item red disactive" id="js-red"></div>
+          </div>
+          <button class="button second-block__button" id="js-choose">
+            <span> Перемкнути світлофор</span>
+          </button>
+        </div>
       </div>
 
       <div class="modal" id="js-modal">

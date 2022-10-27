@@ -1,6 +1,6 @@
 // ?-------------ДОМАШНЕЄ ЗАВДАННЯ: МІНІМУМ---------------------------
 // Створи масив «Список покупок». Кожен елемент масиву є об'єктом, який містить назву продукту, кількість і куплений він чи ні, ціну за одиницю товару, сума. Написати кілька функцій для роботи з таким масивом:
-let shoppingList = [
+const shoppingList = [
   { name: 'milk', quantity: 2, bought: true, price: 32, amount: 64 },
   { name: 'ice-cream', quantity: 10, bought: true, price: 45, amount: 450 },
   { name: 'cheese', quantity: 4, bought: false, price: 27, amount: 108 },
@@ -9,23 +9,22 @@ let shoppingList = [
 ];
 
 // Завдання 1 - Виводити весь список на екран таким чином, щоб спочатку йшли продукти, що ще не придбані, а потім - ті, що вже придбали.
-shoppingList.sort(function (a) {
-  if (a.bought == false) {
-    return -1;
-  } else {
-    return 1;
-  }
-});
+shoppingList.sort((a) => (a.bought ? 1 : -1));
+// if (!a.bought) {
+//   return -1;
+// } else {
+//   return 1;
+// }
+
 console.log('Сортування масиву: спочатку false, потім true');
 console.log(shoppingList);
 
 // Завдання 2 - Покупка продукту. Функція приймає назву продукту і відзначає його як придбаний.
 function buyProduct(name) {
   for (let key in shoppingList) {
-    if (shoppingList[key].name == name) {
+    if (shoppingList[key].name === name) {
       shoppingList[key].bought = true;
-    } else {
-      shoppingList[key];
+      break;
     }
   }
 }
@@ -37,18 +36,12 @@ console.log(shoppingList);
 // ?--------------------ДОМАШНЕЄ ЗАВДАННЯ: НОРМА----------------------
 // Задача 1 - Видалення продукту зі списку (видалення повинно проводитися шляхом створення нового масиву, в якому продукт, що ми шукаємо, буде відсутнім)
 
-shoppingList.splice(
-  2,
-  1,
-  'тут видалено елемент через splice - можу прибрати інфо'
-);
+shoppingList.splice(2, 1);
 let shoppingListNew = [];
 
 shoppingList.filter(() => {
   for (let key in shoppingList) {
-    if (key == undefined) {
-      continue;
-    } else {
+    if (key) {
       for (let i = 0; i < shoppingList.length; i++) {
         shoppingListNew[i] = shoppingList[i];
       }

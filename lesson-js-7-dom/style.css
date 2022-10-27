@@ -107,22 +107,6 @@ body {
   margin-bottom: 0;
 }
 
-.green {
-  background-color: #008000;
-}
-
-.yellow {
-  background-color: #ffff00;
-}
-
-.red {
-  background-color: #ff0000;
-}
-
-.disactive {
-  background-color: #808080;
-}
-
 .second-block__button {
   box-shadow: 3px 3px 10px rgba(128, 128, 128, 0.878);
   border: 1px solid #808080;

@@ -48,17 +48,25 @@ const yellowColor = document.getElementById('js-yellow');
 const redColor = document.getElementById('js-red');
 const changeBtn = document.getElementById('js-choose');
 
+let count = 1;
 changeBtn.addEventListener('click', () => {
-  changeBtn.addEventListener('click', () => {
-    if (greenColor.classList.toggle('disactive')) {
-      yellowColor.classList.toggle('disactive');
-    } else if (yellowColor.classList.toggle('disactive')) {
-      yellowColor.classList.toggle('disactive');
-      redColor.classList.toggle('disactive');
-    } else {
-      yellowColor.classList.toggle('disactive');
-      redColor.classList.toggle('disactive');
-    }
-  });
-});
+  if (count === 1) {
+    greenColor.style.backgroundColor = 'green';
+    count++;
+  } else if (count === 2) {
+    yellowColor.style.backgroundColor = 'yellow';
+    greenColor.style.backgroundColor = '';
 
+    count++;
+  } else if (count === 3) {
+    greenColor.style.backgroundColor = '';
+    yellowColor.style.backgroundColor = '';
+    redColor.style.backgroundColor = 'red';
+    count++;
+  } else {
+    redColor.style.backgroundColor = '';
+    yellowColor.style.backgroundColor = '';
+    greenColor.style.backgroundColor = '';
+    count = 1;
+  }
+});

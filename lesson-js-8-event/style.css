@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 1060px;
+  padding: 0 30px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+body {
+  font-size: 14px;
+}
+
+.text {
+	margin-top: 30px;
+	color: black;
+}

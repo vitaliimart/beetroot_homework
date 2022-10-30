@@ -106,39 +106,23 @@ pushes();
 
 // * Завдання 3 - Створити HTML-сторінку з блоком тексту в рамці.
 // * Реалізувати можливість змінювати розмір блоку, якщо затиснути мишку в правому нижньому кутку і тягнути її далі.
+const lastDiv = document.getElementById('js-last-block');
+let currentWidth = lastDiv.offsetWidth;
+let currentHeight = lastDiv.offsetHeight;
 
-// ? Я ЗНАЮ ЯК ЦЕ ЗРОБИТИ -
+lastDiv.addEventListener('mousedown', (event) => {
+  changeWidth = event.pageX;
+  changeHeight = event.pageY;
 
-window.onload = function () {
-  let lastDiv = document.getElementById('js-last-block');
-  let currentWidth = lastDiv.offsetWidth;
-  let currentHeight = lastDiv.offsetHeight;
-  console.log(currentWidth);
-  console.log(currentHeight);
-
-  lastDiv.addEventListener('mousedown', (event) => {
-    changeWidth = event.pageX;
-    changeHeight = event.pageY;
-    console.log(changeWidth);
-    console.log(changeHeight);
-
-    lastDiv.addEventListener('mousemove', (event) => {
-      lastWidth = currentWidth + event.pageX - changeWidth;
-      // lastHeight = currentHeight + event.pageY - changeHeight;
-      lastDiv.style.width = lastWidth + 'px';
-      lastDiv.style.width = lastHeight + 'px';
-    });
+  lastDiv.addEventListener('mousemove', (event) => {
+    lastWidth = currentWidth + event.pageX - changeWidth;
+    lastHeight = currentHeight + event.pageY - changeHeight;
+    lastDiv.style.width = lastWidth + 'px';
+    lastDiv.style.height = lastHeight + 'px';
   });
+});
 
-  // document.onmousedown = function (event) {
-  //   changeWidth = event.pageX;
-  //   changeHeight = event.pageY;
-
-  //   document.onmousemove = function (event) {
-  //     lastWidth = currentWidth + event.pageX - changeWidth;
-  //     lastHeight = currentHeight + event.pageY - changeHeight;
-  //     lastDiv.style.width = lastWidth + 'px';
-  //     lastDiv.style.width = lastHeight + 'px';
-  //   };
-  // };
-};
+lastDiv.addEventListener('mouseup', () => {
+  currentWidth = lastWidth;
+  currentHeight = lastHeight;
+});

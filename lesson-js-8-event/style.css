@@ -58,6 +58,7 @@ h2 {
 .last-block {
   background: rgba(47, 206, 255, 0.844);
   margin: 20px 0 0 35px;
+  overflow: hidden;
   padding: 20px;
   width: 100%;
 }

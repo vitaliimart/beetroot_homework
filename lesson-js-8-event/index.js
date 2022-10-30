@@ -110,19 +110,22 @@ const lastDiv = document.getElementById('js-last-block');
 let currentWidth = lastDiv.offsetWidth;
 let currentHeight = lastDiv.offsetHeight;
 
+const mouseMove = (event) => {
+  lastWidth = currentWidth + event.pageX - changeWidth;
+  lastHeight = currentHeight + event.pageY - changeHeight;
+  lastDiv.style.width = lastWidth + 'px';
+  lastDiv.style.height = lastHeight + 'px';
+};
+
 lastDiv.addEventListener('mousedown', (event) => {
+  event.preventDefault();
   changeWidth = event.pageX;
   changeHeight = event.pageY;
 
-  lastDiv.addEventListener('mousemove', (event) => {
-    lastWidth = currentWidth + event.pageX - changeWidth;
-    lastHeight = currentHeight + event.pageY - changeHeight;
-    lastDiv.style.width = lastWidth + 'px';
-    lastDiv.style.height = lastHeight + 'px';
-  });
+  lastDiv.addEventListener('mousemove', mouseMove);
 });
 
-lastDiv.addEventListener('mouseup', () => {
-  currentWidth = lastWidth;
-  currentHeight = lastHeight;
+lastDiv.addEventListener('mouseup', (event) => {
+  event.preventDefault();
+  lastDiv.removeEventListener('mousemove', mouseMove);
 });

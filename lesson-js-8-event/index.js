@@ -128,4 +128,6 @@ lastDiv.addEventListener('mousedown', (event) => {
 lastDiv.addEventListener('mouseup', (event) => {
   event.preventDefault();
   lastDiv.removeEventListener('mousemove', mouseMove);
+  currentWidth = lastDiv.offsetWidth;
+  currentHeight = lastDiv.offsetHeight;
 });

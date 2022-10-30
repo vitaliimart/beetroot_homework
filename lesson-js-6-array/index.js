@@ -29,6 +29,16 @@ function buyProduct(name) {
   }
 }
 
+// function buyProduct(name) {
+//   shoppingList.forEach((key) => {
+//     if (key.name === name) {
+//       key.bought = true;
+//       return shoppingList;
+//     }
+//   });
+//   return shoppingList;
+// }
+
 buyProduct('apple');
 console.log('Ця функція змінює у полі "bought" значення false на true');
 console.log(shoppingList);

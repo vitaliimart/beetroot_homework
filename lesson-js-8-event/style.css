@@ -4,18 +4,60 @@
   margin: 0;
 }
 
-.wrapper {
-  max-width: 1060px;
-  padding: 0 30px;
-  margin: 0 auto;
+body {
+  margin-bottom: 300px;
+  max-height: 2000px;
+  max-width: 860px;
+  font-size: 14px;
   width: 100%;
 }
 
-body {
-  font-size: 14px;
+/* Стилізація текстового блоку*/
+h1,
+.block {
+  text-align: center;
+  color: black;
+  padding: 5px;
+  margin: 30px;
 }
 
-.text {
-	margin-top: 30px;
-	color: black;
+/* Стилізація таблиці */
+
+.table {
+  margin-left: 35px;
+}
+
+.table__title {
+  text-align: center;
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: blue;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+th:hover {
+  cursor: pointer;
+  color: green;
+}
+
+/* Стилізація останнього блоку */
+h2 {
+  margin: 35px 0 0 35px;
+}
+.last-block {
+  background: rgba(47, 206, 255, 0.844);
+  margin: 20px 0 0 35px;
+  padding: 20px;
+  width: 100%;
 }

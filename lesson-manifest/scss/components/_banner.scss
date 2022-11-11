@@ -1,0 +1,47 @@
+.banner {
+  background: url('./assets/images/banner.jpg') center center no-repeat;
+  background-size: cover;
+  margin-bottom: 90px;
+  max-height: 600px;
+
+  @media all and (max-width: 768px) {
+    margin-bottom: 70px;
+  }
+
+  &__title {
+    padding: 100px 0px 380px 0px;
+    animation: pulse 3s infinite;
+    letter-spacing: 0.05em;
+    transition: $t-normal;
+    font-size: $fs-title;
+    line-height: 64px;
+    font-weight: 600;
+    max-width: 770px;
+    width: 100%;
+
+    @media all and (max-width: 768px) {
+      padding: 30px 0px 190px 0px;
+      font-size: $fs-tablet;
+      line-height: 50px;
+      max-width: 570px;
+    }
+
+    @media all and (max-width: 480px) {
+      padding: 70px 0px 230px 0px;
+      font-size: $fs-mobile;
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    color: $c-black;
+  }
+  50% {
+    text-decoration: underline;
+    color: $c-grey-500;
+  }
+  100% {
+    color: $c-black;
+  }
+}

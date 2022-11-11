@@ -1,0 +1,36 @@
+// * Colors
+$c-grey-500: #7b7b7b;
+$c-grey-700: #565656;
+$c-grey-100: #f4f4f4;
+$c-white: #ffffff;
+$c-black: #000;
+
+// * Font-size
+$fs-tablet: 36px;
+$fs-mobile: 30px;
+$fs-title: 48px;
+$fs-small: 12px;
+$fs-base: 16px;
+$fs-32: 32px;
+$fs-28: 28px;
+$fs-24: 24px;
+$fs-23: 23px;
+$fs-22: 22px;
+$fs-19: 19px;
+$fs-18: 18px;
+$fs-14: 14px;
+
+// *Fonts
+$ff-redhat: 'Red Hat Display', sans-serif;
+$ff-lato: 'Lato', sans-serif;
+
+// * Bezier
+$b-normal: cubic-bezier(0.4, 0, 0.2, 1);
+
+// * Transition
+$t-normal: 0.45s $b-normal;
+
+@media all and (max-width: 768px) {
+}
+@media all and (max-width: 480px) {
+}

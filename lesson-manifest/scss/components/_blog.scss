@@ -1,0 +1,117 @@
+.blog {
+  margin-bottom: 90px;
+  @media all and (max-width: 768px) {
+    margin-bottom: 70px;
+  }
+
+  &__title {
+    letter-spacing: 0.05em;
+    font-size: $fs-title;
+    margin-bottom: 50px;
+    line-height: 64px;
+    @media all and (max-width: 480px) {
+      text-align: center;
+    }
+  }
+
+  &__row {
+    margin-bottom: 50px;
+    display: flex;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @media all and (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    width: 100%;
+
+    &:nth-child(1),
+    &:nth-child(3) {
+      margin-right: 30px;
+      @media all and (max-width: 768px) {
+        margin-right: 20px;
+      }
+      @media all and (max-width: 767px) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__info {
+    margin-top: 85px;
+    @media all and (max-width: 1200px) {
+      margin-top: 40px;
+    }
+    @media all and (max-width: 992px) {
+      margin-top: 0;
+    }
+
+    @media all and (max-width: 768px) {
+      margin-bottom: 37px;
+      margin-top: 0;
+    }
+
+    &--mleft {
+      margin-left: 120px;
+      @media all and (max-width: 1200px) {
+        margin-left: 80px;
+      }
+      @media all and (max-width: 992px) {
+        margin-left: 35px;
+      }
+      @media all and (max-width: 768px) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__smalltitle {
+    margin-bottom: 30px;
+    color: $c-grey-500;
+  }
+
+  &__subtitle {
+    margin-bottom: 15px;
+    max-width: 340px;
+    font-size: $fs-23;
+    font-weight: 500;
+  }
+
+  &__date {
+    margin-bottom: 50px;
+    color: $c-grey-500;
+    @media all and (max-width: 992px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__text {
+    letter-spacing: 0.05em;
+    color: $c-grey-700;
+    max-width: 470px;
+    width: 100%;
+    @media all and (max-width: 768px) {
+      max-width: 100%;
+    }
+  }
+  &__link {
+    padding: 5px 15px 0 15px;
+  }
+
+  &__img {
+    display: inline;
+    width: 24px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .blog__item--forder {
+    order: 1;
+  }
+  .blog__item--sorder {
+    order: 2;
+  }
+}

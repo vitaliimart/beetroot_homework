@@ -1,0 +1,158 @@
+.header {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+
+  &__element {
+    align-items: center;
+    margin: 40px 0;
+    display: flex;
+    height: 20px;
+
+    @media all and (max-width: 768px) {
+      margin: 20px 0;
+    }
+
+    &--right {
+      margin-left: 20px;
+      max-width: 550px;
+      width: 100%;
+    }
+  }
+
+  &__logo {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 12px;
+  }
+
+  &__menu {
+    justify-content: space-between;
+    display: flex;
+
+    @media all and (max-width: 768px) {
+      justify-content: flex-end;
+    }
+  }
+
+  &__list {
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 14px;
+    font-size: $fs-14;
+    list-style: none;
+    display: flex;
+    width: 100%;
+
+    @media all and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__item {
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    line-height: 17px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    border-bottom: 1px solid transparent;
+    transition: $t-normal;
+    text-decoration: none;
+    padding-bottom: 4px;
+    color: $c-black;
+    cursor: pointer;
+    &:hover {
+      border-bottom: 1px solid $c-black;
+    }
+  }
+
+  &__buttons {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+
+  &__input {
+    background: transparent url('./assets/icons/search.svg') right center
+      no-repeat;
+    transition: $t-normal;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    height: 24px;
+    width: 70px;
+    border: 0;
+
+    @media all and (max-width: 768px) {
+      width: 100px;
+    }
+
+    @media all and (max-width: 480px) {
+      width: 50px;
+    }
+
+    &:hover {
+      background: transparent none right center no-repeat;
+      border-bottom: 1px solid $c-black;
+    }
+  }
+}
+// BURGER WINDOW
+.modal {
+  display: none;
+}
+@media all and (max-width: 768px) {
+  .modal {
+    &--show {
+      display: block;
+      height: 100vh;
+    }
+
+    &__list {
+      padding-top: 40px;
+      list-style: none;
+    }
+
+    &__item {
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 0.3em;
+      margin-bottom: 50px;
+      line-height: 17px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__link {
+      border-bottom: 1px solid transparent;
+      transition: $t-normal;
+      text-decoration: none;
+      padding-bottom: 4px;
+      color: $c-black;
+      cursor: pointer;
+      &:hover {
+        border-bottom: 1px solid $c-black;
+      }
+    }
+
+    .footer {
+      &__info,
+      &__phone,
+      &__email {
+        margin-bottom: 30px;
+      }
+      &__social {
+        margin-bottom: 60px;
+      }
+    }
+  }
+}

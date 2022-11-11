@@ -1,0 +1,61 @@
+mixin header()
+	.wrapper
+		header.header
+			.header__element
+				.header__logo
+					img(src="./assets/images/logo.svg", alt="logo").header__image
+			.header__item.header__element--right
+				nav.header__menu
+					ul.header__list
+						li.header__item
+							a.header__link(href="#") home
+						li.header__item
+							a.header__link(href="#") about
+						li.header__item
+							a.header__link(href="#") works
+						li.header__item
+							a.header__link(href="#") blog
+						li.header__item
+							a.header__link(href="#") contact
+					.header__buttons
+						.header__search
+							input#search(type="search", name="search").header__input
+						+burger()
+		.modal#js-list
+			ul.modal__list
+				li.modal__item
+					a.modal__link(href="#") home
+				li.modal__item
+					a.modal__link(href="#") about
+				li.modal__item
+					a.modal__link(href="#") works
+				li.modal__item
+					a.modal__link(href="#") blog
+				li.modal__item
+					a.modal__link(href="#") contact
+			.footer__content
+				.footer__info
+					p.footer__title Need a project?
+					p.footer__phone (239) 555-0108
+					p.footer__email tanya.hill@example.com
+				.footer__social
+					.footer__item
+						svg.footer__icon
+							use(xlink:href='./assets/icons/instagram.svg#instagram')
+					.footer__item
+						svg.footer__icon.footer__icon--fb
+							use(xlink:href='./assets/icons/facebook.svg#facebook')
+					.footer__item
+						svg.footer__icon
+							use(xlink:href='./assets/icons/twitter.svg#twitter')
+					.footer__item
+						svg.footer__icon
+							use(xlink:href='./assets/icons/linkedin.svg#linkedin')
+			p.footer__text © Copyright Manifest Theme. Allrights reserved
+
+
+
+
+
+
+

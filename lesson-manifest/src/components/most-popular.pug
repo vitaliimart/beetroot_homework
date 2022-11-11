@@ -1,0 +1,47 @@
+mixin most-popular()
+	.wrapper
+		section.most-popular
+			.most-popular__header
+				.most-popular__left
+					h2.most-popular__titles The Most Popular
+				.most-popular__right
+					p.most-popular__smalltext View All
+						span
+							a(href="#").most-popular__link
+								img(src="./assets/icons/arrow.svg", alt="icon arrow").most-popular__img
+			.most-popular__articles
+				article.most-popular__item
+					.most-popular__picture
+						//- img(src="./assets/images/most-popular/most-popular-lamp.jpg", alt="image lamp").most-popular__image
+						picture.most-popular__image
+							source(srcset='./assets/images/most-popular/lamp-desktop.jpg' media='(min-width: 1200px)')
+							source(srcset='./assets/images/most-popular/lamp-tablet.jpg' media='(min-width: 768px)')
+							img(src='./assets/images/most-popular/lamp-mobile.jpg' alt='small picture')
+					.most-popular__content
+						.most-popular__header
+							.most-popular__left Interface Design
+							.most-popular__right 8 June, 2020
+						.most-popular__title Mentorship Match — How a simple LinkedIn feature can boost diversity
+						.most-popular__text LinkedIn is on a clear mission to make professionals more successful by connecting the global workforce and as we learned — diversity and success go hand in hand
+				article.most-popular__item
+					.most-popular__picture
+						img(src="./assets/images/most-popular/most-popular-wall.jpg", alt="image wall").most-popular__image
+					.most-popular__content
+						.most-popular__header
+							.most-popular__left Visual Design
+							.most-popular__right 8 June, 2020
+						.most-popular__title Creativity vs. UX
+						.most-popular__text Is it possible to create a delightful user experience without following best UX practices?
+			.most-popular__footer
+				button(type="button").most-popular__button
+					span Load More
+			.most-popular__info
+				.most-popular__element.most-popular__element--left
+					p.most-popular__paragraph Full-time UI/UX designer
+					p.most-popular__paragraph Head of Design at VeronaLabs.com
+					p.most-popular__paragraph
+						a(href="#").most-popular__link
+							img(src="./assets/icons/arrow.svg", alt="icon arrow").most-popular__img
+				.most-popular__element.most-popular__element--right
+					p.most-popular__paragraphp.most-popular__paragraph--bottom We work with clients around the world from our headquarters in Charleston, South Carolina.
+					p.most-popular__paragraph We focus on naming, branding, brand narratives, website design and development, and brand experiences.

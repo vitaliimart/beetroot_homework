@@ -1,0 +1,54 @@
+// * Base
+@import './normalise';
+@import './variables';
+
+@font-face {
+  font-family: 'Lato';
+  src: url(./assets/fonts/Lato-Regular.ttf) format('ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url(./assets/fonts/Lato-Bold.ttf) format('ttf');
+  font-weight: 700;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: flex;
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+body {
+  font-family: $ff-lato;
+  letter-spacing: 0.1em;
+  font-size: $fs-base;
+  color: $c-grey-700;
+  line-height: 166%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $ff-redhat;
+  color: $c-black;
+}
+
+.app {
+  background-color: $c-white;
+}
+
+@import './elements/index';
+@import './components/index';

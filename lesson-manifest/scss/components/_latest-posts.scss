@@ -1,0 +1,112 @@
+.latest-posts {
+  margin-bottom: 90px;
+
+  @media all and (max-width: 768px) {
+    margin-bottom: 70px;
+  }
+  &__header {
+    justify-content: space-between;
+    margin-bottom: 50px;
+    display: flex;
+    height: 38px;
+
+    @media all and (max-width: 768px) {
+      flex-direction: column;
+      padding-bottom: 30px;
+    }
+  }
+
+  &__titles {
+    font-size: $fs-28;
+    font-weight: 600;
+
+    @media all and (max-width: 768px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__right {
+    display: flex;
+  }
+
+  &__link {
+    padding: 5px 0px 0px 15px;
+  }
+
+  &__img {
+    display: inline;
+    width: 24px;
+  }
+  &__smalltext {
+    color: $c-grey-500;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px 30px;
+    grid-template-areas:
+      'a b c'
+      'd f g';
+    .a {
+      grid-area: a;
+    }
+    .b {
+      grid-area: b;
+    }
+    .c {
+      grid-area: c;
+    }
+    .d {
+      grid-area: d;
+    }
+    .f {
+      grid-area: f;
+    }
+    .g {
+      grid-area: g;
+    }
+
+    @media all and (max-width: 1200px) {
+      grid-template-columns: 1fr 1fr;
+
+      grid-template-areas:
+        'a f'
+        'd b'
+        'c g';
+    }
+    @media all and (max-width: 660px) {
+      grid-template-columns: 1fr;
+
+      grid-template-areas:
+        'a'
+        'd'
+        'b'
+        'f'
+        'c'
+        'g';
+    }
+  }
+
+  &__subtitle {
+    justify-content: space-between;
+    font-size: $fs-small;
+    margin-bottom: 25px;
+    color: $c-grey-500;
+    display: flex;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: $fs-22;
+    font-weight: 500;
+  }
+
+  &__text {
+    letter-spacing: 0.05em;
+    margin-bottom: 26px;
+    @media all and (max-width: 767px) {
+      margin-bottom: 0;
+    }
+  }
+}

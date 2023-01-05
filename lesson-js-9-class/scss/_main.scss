@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: $c-white;
+  min-height: 100vh;
+  color: $c-black;
+  padding: 50px;
+}
+
+h1-h6 {
+  margin: 0;
+}
+p {
+  margin-bottom: 10px;
+}
+
+.js-div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+
+table {
+  background: rgb(51, 177, 46);
+  padding: 15px 5px;
+  margin-bottom: 30px;
+}
+
+th {
+  min-width: 100px;
+}
+td {
+  text-align: center;
+	padding-top: 10px;
+}
